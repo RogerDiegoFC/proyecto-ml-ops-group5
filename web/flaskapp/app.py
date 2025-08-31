@@ -27,7 +27,7 @@ def predict():
     prediction = model.predict(image)
     predicted_class = np.argmax(prediction, axis=1)[0]  # clase más probable
 
-    return f"Es un {predicted_class} ;) !!"
+    return f"Posibe diagnostico {predicted_class} "
 
 def data_validation(image):
     # Redimensionar a 28x28

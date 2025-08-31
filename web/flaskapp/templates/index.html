@@ -1,17 +1,40 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- Formulario para subir imágenes --> 
-  <form id="inputForm" style="text-align: center;">
-    <input type="file" name="file">
-        <div>
-          <button type="button" class="btn btn-info" onclick="getResult()" value="submit"
-            style="cursor: pointer;">Submit</button>
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-5">
+  <div class="card shadow-lg border-primary">
+    <div class="card-header bg-primary text-white text-center">
+      <h2 class="mb-0">Reconocimiento X-rays</h2>
+    </div>
+    <div class="card-body">
+      <form id="inputForm" class="text-center">
+        <div class="form-group mb-3">
+          <label for="fileInput" class="form-label">Selecciona una imagen</label>
+          <input type="file" class="form-control-file" id="fileInput" name="file">
         </div>
-  </form>
+        <button type="button" class="btn btn-info btn-lg" onclick="getResult()" style="cursor: pointer;">
+          Enviar
+        </button>
+      </form>
+    </div>
+  </div>
 
   <!-- Sección para mostrar resultado --> 
-  <div class="row" id="result">
-    
+  <div class="row mt-4 justify-content-center" >
+    <!-- Cada resultado será una tarjeta -->
+    <!-- Ejemplo de tarjeta (puedes clonar esta plantilla en JS según la respuesta) -->
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card shadow-sm border-info h-100">
+        
+        <div class="card-body text-center">
+         
+          <p class="card-text" id="result"></p>
+        </div>
+      </div>
+    </div>
   </div>
+  
+</div>
+
 
 <script>
   function getResult() {
@@ -29,3 +52,4 @@
     });
 }
 </script>
+{% endblock %}
