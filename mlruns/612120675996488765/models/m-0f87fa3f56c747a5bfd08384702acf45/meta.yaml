@@ -1,0 +1,10 @@
+artifact_location: file:///home/speranza/Documentos/OPL-proyecto-final/mlruns/612120675996488765/models/m-0f87fa3f56c747a5bfd08384702acf45/artifacts
+creation_timestamp: 1756600574330
+experiment_id: '612120675996488765'
+last_updated_timestamp: 1756600577610
+model_id: m-0f87fa3f56c747a5bfd08384702acf45
+model_type: null
+name: simple_net_model
+source_run_id: e508c88818614d96a98816479558e73f
+status: 2
+status_message: null

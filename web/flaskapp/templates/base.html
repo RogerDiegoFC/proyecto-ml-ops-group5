@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/adminlte.min.css') }}">
+    <script src="{{ url_for('static', filename='plugins/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+   
+
+</head>
+<body class="hold-transition sidebar-mini " style="overflow-x: scroll;overflow-y: scroll;">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand ">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" />
+        </nav>
+        
+
+        <!-- Main Sidebar Container (Menú) -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <a class="brand-link">
+                <span class="brand-text font-weight-light">Modelos de reconocimiento</span>
+            </a>
+
+            <div class="sidebar">
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        
+                       
+                        <li class="nav-item">
+                            <a  class="nav-link">
+                                <i class="nav-icon fas fa-pencil-alt"></i>
+                                <p>Reconocimiento X-rays</p>
+                            </a>
+                        </li>
+                      
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Content Wrapper (Área de contenido) -->
+        <div class="content-wrapper" >
+            <div class=" mt-4" style="margin-left: 12px;">
+                <!-- Aquí se insertará el contenido específico de cada página -->
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+
+        <!-- Footer (Pie de página) -->
+        <footer class="main-footer">
+            <strong>&copy; 2025 <a href="#">UGRAM</a>.</strong> Todos los derechos reservados.
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/adminlte.min.js') }}"></script>
+   
+</body>
+</html>
