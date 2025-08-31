@@ -1,0 +1,10 @@
+artifact_location: file:///home/speranza/Documentos/OPL-proyecto-final/mlruns/612120675996488765/models/m-74d84501e3a64bd5a3ade0bf2f59d863/artifacts
+creation_timestamp: 1756671818863
+experiment_id: '612120675996488765'
+last_updated_timestamp: 1756671853875
+model_id: m-74d84501e3a64bd5a3ade0bf2f59d863
+model_type: null
+name: modelo_tf_final
+source_run_id: b94aae786c2d4ecfb077f8f65fce6ff1
+status: 2
+status_message: null

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/speranza/Documentos/OPL-proyecto-final/mlruns/612120675996488765/b94aae786c2d4ecfb077f8f65fce6ff1/artifacts
+deleted_time: 1756672272024
+end_time: 1756671854262
+entry_point_name: ''
+experiment_id: '612120675996488765'
+lifecycle_stage: deleted
+run_id: b94aae786c2d4ecfb077f8f65fce6ff1
+run_name: entrenamiento_run
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1756671752211
+status: 3
+tags: []
+user_id: speranza

@@ -1,0 +1,23 @@
+artifact_path: file:///home/speranza/Documentos/OPL-proyecto-final/mlruns/612120675996488765/models/m-281612ed5b374c7e88b481f46022e4ce/artifacts
+flavors:
+  python_function:
+    config:
+      device: null
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pytorch
+    pickle_module_name: mlflow.pytorch.pickle_module
+    python_version: 3.9.23
+  pytorch:
+    code: null
+    model_data: data
+    pytorch_version: 2.8.0+cu128
+mlflow_version: 3.1.4
+model_id: m-281612ed5b374c7e88b481f46022e4ce
+model_size_bytes: 5029
+model_uuid: m-281612ed5b374c7e88b481f46022e4ce
+prompts: null
+run_id: 615cc6238bf644728933a4b601734139
+utc_time_created: '2025-08-31 19:13:56.606961'
